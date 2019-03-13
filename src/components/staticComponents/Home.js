@@ -1,12 +1,26 @@
 import React from "react";
 import profilePic from '../../assets/images/sabita_silwal.jpg';
-import {Container, Row, Col, Image} from 'react-bootstrap';
+import { ReactComponent as Pro } from '../../assets/images/sabita_silwal.svg'
+import { Container, Row, Col, Image } from 'react-bootstrap';
 function Home() {
     const divStyle = {
         padding: '50px',
         backgroundColor: 'grey',
         border: '2px solid green',
     }
+    // "engines": {
+    //     "npm": "6.4.1",
+    //     "node": "10.15.2"
+    //   },
+    //"serve": "^10.1.2"
+    // "scripts": {
+    //     "dev": "react-scripts start",
+    //     "start": "serve -s build",
+    //     "build": "react-scripts build",
+    //     "test": "react-scripts test --env=jsdom",
+    //     "eject": "react-scripts eject",
+    //     "heroku-postbuild": "npm run build"
+    //   },
     return (
         <div>
             <div style={divStyle}>
@@ -14,14 +28,15 @@ function Home() {
                     position: 'relative',
                     left: '500px', width: "300px", height: '450px'
                 }}/> */}
-                <Container>
+                {/* <Container>
                     <Row>
                         <Col xs={6} md={4}>
                             <Image src={profilePic} rounded />
                         </Col>
                         
                     </Row>
-                </Container>;
+                </Container>; */}
+                <Pro style={{width:'50%'}}/>
                 <div>
                     I am inside home button
         </div>

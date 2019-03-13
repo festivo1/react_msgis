@@ -11,19 +11,9 @@ class Project extends React.Component {
         return (
             <div>
                 <div style={divStyle}>
-                    {/* <img src={profilePic} alt={"LOGO"} style={{
-                    position: 'relative',
-                    left: '500px', width: "300px", height: '450px'
-                }}/> */}
-                    <Container> 
-                    
-                        <Row>
-                            <Col xs={6} md={4}>
-                                <Image src={profilePic} rounded />
-                            </Col>
-
-                        </Row>
-                    </Container>;
+                <img src={profilePic} alt={"LOGO"} style={{
+                width: "50%"
+                }}/> 
                 <div>
                         I am inside home button
         </div>
