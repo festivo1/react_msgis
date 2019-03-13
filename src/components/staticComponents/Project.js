@@ -12,7 +12,7 @@ class Project extends React.Component {
             <div>
                 <div style={divStyle}>
                 <img src={profilePic} alt={"LOGO"} style={{
-                width: "50%"
+                width: "50%", height:'100%'
                 }}/> 
                 <div>
                         I am inside home button

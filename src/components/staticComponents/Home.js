@@ -36,7 +36,7 @@ function Home() {
                         
                     </Row>
                 </Container>; */}
-                <Pro style={{width:'50%'}}/>
+                <Pro style={{position:'relative',width:'35%', left:'30%'}}/>
                 <div>
                     I am inside home button
         </div>
