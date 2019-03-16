@@ -6,24 +6,25 @@ import Resume from './components/staticComponents/Resume';
 import Contact from './components/staticComponents/Contact';
 import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import FooterComponent from './components/reusableComponents/footerComponents';
+import './App.css';
 class App extends React.Component {
     render() {
         const divStyle = {
-            
-            
+
+
 
         }
         return (
             <Router>
-                <div style={divStyle}>
-                    <HeaderComponent />
-                    <Switch>
+                <div className='wrapper'>
+                    <HeaderComponent className='header' />
+                    <Switch className="main">
                         <Route exact path='/' component={Home}></Route>
                         <Route exact path='/projects' component={Project}></Route>
                         <Route exact path='/resume' component={Resume}></Route>
                         <Route exact path='/contact' component={Contact}></Route>
                     </Switch>
-                    <FooterComponent/>
+                    <FooterComponent className='footer' />
                 </div>
             </Router >
         )

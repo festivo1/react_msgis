@@ -10,11 +10,10 @@ class Project extends React.Component {
         }
         return (
             <div>
-                <div style={divStyle}>
-                <img src={profilePic} alt={"LOGO"} style={{
-                width: "50%", height:'100%'
-                }}/> 
                 <div>
+                    <img src={profilePic} alt={"LOGO"}
+                    />
+                    <div>
                         I am inside home button
         </div>
                 </div>
