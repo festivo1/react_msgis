@@ -5,8 +5,10 @@ import './headerComponents.css';
 function FooterComponent() {
     
     return (
-        <div className="fixed-footer" >
-            copyWright @ 2019-2022
+        <div className="fixed-footer" style={{marginTop:"5%", textAlign:'center'}} >
+            © Copyright 2019. All rights reserved.
+
+
         </div>
     );
 
