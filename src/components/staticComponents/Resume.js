@@ -1,70 +1,29 @@
 import React from "react";
 import './resume.css';
 import { ReactComponent as Pro } from '../../assets/images/sabita_silwal.svg'
-class Resume extends React.Component{
-    render(){
-    return(
-        <div className="container">
+class Resume extends React.Component {
+  render() {
+    return (
+      <div className="container">
         <section>
           <div>
-            <div><Pro className="avatar" /></div>
+            <div><Pro className="avatar" st /></div>
           </div>
           <div>
-            <div className="my-name">Andre Madarang</div>
-            <div className="my-title">Full Stack Web Developer</div>
+            <div className="my-name">Sabita Silwal</div>
+            <div className="my-title">Research/Data Analyst</div>
             <div className="links">
               <div className="link-item">
-                <a href="http://google.ca">andremadarang.com</a>
+                <a href="https://msgis.herokuapp.com">sabitasilwal</a>
               </div>
               <div className="link-item">
-                <a href="mailto:email@email.com">email@email.com</a>
+                <a href="mailto:silwal.sabita@gmail.com">silwal.sabita@gmail.com</a>
               </div>
               <div className="link-item">
-                <a href="tel:123-456-7890">123-456-7890</a>
+                <a href="tel:8018341401">8018341401</a>
               </div>
             </div> {/* end links */}
-            <p>Netlify Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores explicabo nam similique quaerat, porro perferendis adipisci molestias eius dolore eaque, consequatur placeat voluptates consequuntur! Quis quia incidunt aut, repellat aspernatur placeat praesentium vel enim eaque, aperiam, in corrupti tenetur.</p>
-          </div>
-        </section>
-        <section>
-          <div className="section-title">Experience</div>
-          <div>
-            <div className="job">
-              <div className="job-title-container">
-                <div>
-                  <div className="job-company">Facebook</div>
-                  <div className="job-title">Back-End Web Developer</div>
-                </div>
-                <div>
-                  Jan 2013 - Jan 2014
-                </div>
-              </div> {/* end job-title container */}
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum voluptate iure quasi inventore doloremque exercitationem maiores libero corrupti magnam praesentium voluptatem facere optio recusandae sit debitis tenetur beatae, voluptatibus itaque magni, est. Fugiat nostrum nemo fuga nulla modi doloremque maxime.</p>
-            </div> {/* end job */}
-            <div className="job">
-              <div className="job-title-container">
-                <div>
-                  <div className="job-company">Facebook</div>
-                  <div className="job-title">Back-End Web Developer</div>
-                </div>
-                <div>
-                  Jan 2013 - Jan 2014
-                </div>
-              </div> {/* end job-title container */}
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum voluptate iure quasi inventore doloremque exercitationem maiores libero corrupti magnam praesentium voluptatem facere optio recusandae sit debitis tenetur beatae, voluptatibus itaque magni, est. Fugiat nostrum nemo fuga nulla modi doloremque maxime.</p>
-            </div> {/* end job */}
-            <div className="job">
-              <div className="job-title-container">
-                <div>
-                  <div className="job-company">Facebook</div>
-                  <div className="job-title">Back-End Web Developer</div>
-                </div>
-                <div>
-                  Jan 2013 - Jan 2014
-                </div>
-              </div> {/* end job-title container */}
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum voluptate iure quasi inventore doloremque exercitationem maiores libero corrupti magnam praesentium voluptatem facere optio recusandae sit debitis tenetur beatae, voluptatibus itaque magni, est. Fugiat nostrum nemo fuga nulla modi doloremque maxime.</p>
-            </div> {/* end job */}
+            <p>An experienced GIS data analyst ...</p>
           </div>
         </section>
         <section>
@@ -72,45 +31,182 @@ class Resume extends React.Component{
           <div>
             <div className="job">
               <div className="job-title-container">
+
                 <div>
-                  <div className="job-company">University of School</div>
-                  <div className="job-title">Bachelors of Science in Some Field</div>
+                  <div className="job-company">University of Utah:SLC, UT</div>
+                  <div >Master of Science(MS), Geographic Information Science</div>
+
                 </div>
                 <div>
-                  Jan 2013 - Jan 2014
+                 May 2019
                 </div>
               </div> {/* end job-title container */}
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium blanditiis architecto, ipsum excepturi ducimus asperiores, eius necessitatibus porro harum? Reiciendis, vel. Voluptates dolorum soluta minima iste iusto, quae aliquam magni, dolores labore, placeat reiciendis! Corrupti, in, ullam! Repudiandae, quibusdam aliquid!</p>
+            </div> {/* end job */}
+            <div className="job">
+              <div className="job-title-container">
+
+                <div>
+                  <div className="job-company">University of Utah:SLC, UT</div>
+                  <div >Bachelor of Science(BS), Geoscience-Environment Emphasis</div>
+
+                </div>
+                <div>
+                 May 2014
+                </div>
+              </div> {/* end job-title container */}
             </div> {/* end job */}
           </div>
         </section>
         <section>
-          <div className="section-title">Skills</div>
+          <div className="section-title">Honors and Awards</div>
+          <div>
+            <div className="job">
+              <div className="job-title-container">
+
+                <div>
+                  {/* <div className="job-company">University of Utah:SLC, UT</div>
+                  <div >Master of Science(MS), Geographic Information Science</div> */}
+                  <p>-Undergraduate Research Scholar Designation-awarded for undergraduate research for two semesters</p>
+                  
+                </div>
+                <div>
+                 May 2014
+                </div>
+              </div> {/* end job-title container */}
+            </div> {/* end job */}
+            <div className="job">
+              <div className="job-title-container">
+
+                <div>
+                  {/* <div className="job-company">University of Utah:SLC, UT</div>
+                  <div >Bachelor of Science(BS), Geoscience-Environment Emphasis</div> */}
+<p>-Department of Geology and Geophysics Scholarships for three years- awarded for academic excellence</p>
+                </div>
+                <div>
+                 2011-2014
+                </div>
+              </div> {/* end job-title container */}
+            </div> {/* end job */}
+          </div>
+        </section>
+       
+        <section>
+          <div className="section-title">Expertise</div>
           <div>
             <div className="skills-container">
               <ul>
-                <li>Skill One</li>
-                <li>Skill Two</li>
-                <li>Skill Three</li>
-                <li>Skill Four</li>
+                <li>Gis Analysis(Vector and Raster analysis including overlay, interpolation, map algebra, terrain modeling and network analysis)</li>
+                <li>Cartography and Graphic Design</li>
+               
+                
               </ul>
               <ul>
-                <li>Skill One</li>
-                <li>Skill Two</li>
-                <li>Skill Three</li>
-                <li>Skill Four</li>
+                <li>Microsoft Office Suite</li>
+                <li>Structured Query Language(SQL)</li>
+                <li>HTML5, CSS3 and JavaScript</li>
+                <li>Field Work(Geological)</li>
               </ul>
               <ul>
-                <li>Skill One</li>
-                <li>Skill Two</li>
-                <li>Skill Three</li>
-                <li>Skill Four</li>
+                <li>Petra (Software for Organic Geochemistry)</li>
+                <li>Basic Programming and Scripting</li>
+                <li>Project Design and Management</li>
               </ul>
             </div> {/* end skills-container */}
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, obcaecati aut quas et voluptatibus dolorem similique, voluptate, totam, corrupti placeat molestiae distinctio consectetur. Et dolorum, eos, expedita debitis sed explicabo.</p>
+            
+          </div>
+        </section>
+       
+        <section>
+          <div className="section-title">Experience</div>
+          <div>
+            <div className="job" style={{ lineHeight: '1.4' }}>
+              <div className="job-title-container">
+                <div>
+                  <div className="job-title">Research and Data Analyst-<span className="job-company">Energy and Geoscience Institute(EGI):SLC, UT</span>
+                  </div>
+                </div>
+
+                <div>
+                  Nov 2013 - present
+                </div>
+              </div> {/* end job-title container */}
+              <p>-Literature Review and Analysis</p>
+              <p>-Building project reports and presentations</p>
+              <p>-Digitizing biostratigraphic and geochemical data</p>
+              <p>-Checking quality of data and formatting it into EGI Oceans standard</p>
+              <p>-Drafting lithologic columns/stratigraphic columns and Wheeler Diagrams using biostratigraphic data and Adobe Illustrator</p>
+              <p>-Generating geopchemical plots using geochemical data and Petra Software</p>
+              <p>-Drafting geochemical plots using Adobe Illustrator</p>
+              <p>-Generating maps of the Biostratigraphy and Geochemistry data on ArcMap</p>
+            </div> {/* end job */}
+            <div className="job" style={{ lineHeight: '1.4' }}>
+              <div className="job-title-container">
+                <div>
+                  <div className="job-title">Student Researcher-<span className="job-company">Geology and Geophysics Department-University of Utah:SLC, UT</span>
+                  </div>
+                </div>
+
+
+                <div>
+                  Jul 2013 - May 2014
+                </div>
+              </div> {/* end job-title container */}
+              <p>-Assisted Dr.Paul Jewell with research on Ancient Lake Bionneville</p>
+              <p>-Used ArcGIS, Google Earth and Aerial Photographs to draw profile graphs and maps to characterize undocumented shorelinese of Ancient Lake Bionneville</p>
+              <p>-Assisted Dr.Paul Jewell wiht field work at different locations of Utah (Promontory Point, Little Mounatian, Delta, Stansbury Island)</p>
+            </div>{/*end job*/}
+            <div className="job" style={{ lineHeight: '1.4' }}>
+              <div className="job-title-container">
+                <div>
+                <div className="job-title">Assistant Manager-<span className="job-company">Teavana Corporation(Part of Starbucks):SLC, UT</span>
+                </div>
+                </div>
+
+                <div>
+                  Nov 2011 - Oct 2013
+                </div>
+              </div> {/* end job-title container */}
+              <p>-Customer Service</p>
+              <p>-Sales</p>
+              <p>-Hiring and Scheduling</p>
+              <p>-Training new employees and Onboarding</p>
+              <p>-Inventory Management</p>
+            </div>{/*end job*/}
           </div>
         </section>
         <section>
+          <div className="section-title">Leadership</div>
+          <div>
+            <div className="job">
+              <div className="job-title-container">
+                <div>
+                  <div className="job-company">American Association of Petroleum Geologists(AAPG), Member</div>
+                </div>
+                <div>
+                  2012-2014
+                </div>
+              </div> {/* end job-title container */}
+              <p>-Attended student chapter meetings</p>
+              <p>-Presented Poster in teh 2014 Student Poster Session</p>
+            </div> {/* end job */}
+            <div className="job">
+              <div className="job-title-container">
+                <div>
+                  <div className="job-company">Association of Environmental and Engineering Geologists(AEG), Member</div>
+                </div>
+                <div>
+                  2012-2014
+                </div>
+              </div> {/* end job-title container */}
+              <p>-Supported the student chapters and attended mettings</p>
+              <p>-Vounteered at various mettings</p>
+              <p>-Attended field trip of Sothern Utah</p>
+            </div> {/* end job */}
+          </div>
+        </section>
+
+       
+        {/* <section>
           <div className="section-title">Interests</div>
           <div className="interests-container">
             <img src="img/guitar.svg" alt="icon" />
@@ -123,8 +219,8 @@ class Resume extends React.Component{
             <img src="img/cutlery.svg" alt="icon" />
           </div>
         </section>
-        <section>
-          <div className="section-title">References</div>
+        <section> */}
+          {/* <div className="section-title">References</div>
           <div>
             <div className="job-company">Some Guy, CEO</div>
             <div className="job-title">Some Company Inc.</div>
@@ -142,12 +238,13 @@ class Resume extends React.Component{
                 <a href="tel:123-456-7890">123-456-7890</a>
               </div>
             </div> {/* end links */}
-            <p className="reference-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam. Earum suscipit aliquid eius nostrum iste reprehenderit nesciunt, ratione natus consectetur voluptatum magni, culpa in nihil veniam est quod dolorum sunt facere odio quibusdam corporis adipisci fugiat quasi, consequuntur. Debitis?</p>
+            {/* <p className="reference-details">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, quam. Earum suscipit aliquid eius nostrum iste reprehenderit nesciunt, ratione natus consectetur voluptatum magni, culpa in nihil veniam est quod dolorum sunt facere odio quibusdam corporis adipisci fugiat quasi, consequuntur. Debitis?</p>
             <div className="reference">More references available upon request.</div>
-          </div>
-        </section>
+          </div> */}
+        {/* </section>  */}
+      
       </div>
     )
-    }
+  }
 }
 export default Resume;

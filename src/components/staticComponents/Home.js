@@ -14,9 +14,9 @@ class Home extends React.Component {
                 </Col>
                 <Col style={{color:'rgb(100,10,10)',lineHeight:'30px'}}>
                     <h4>Name: <span style={spanStyle}>Sabita Silwal</span></h4>
-                    <h4>Program:  <span style={spanStyle}>M.S</span></h4>
-                    <h4>Major:  <span style={spanStyle}>GIScience</span></h4>
-                    <h4>Email: <span style={spanStyle}></span></h4>
+                    <h4>Program:  <span style={spanStyle}>Master of Science(MS), Geographic Information Science</span></h4>
+                    <h4>Major:  <span style={spanStyle}>GIS</span></h4>
+                    <h4>Email: <span style={spanStyle}>silwal.sabita@gmail.com</span></h4>
                     <h4>Phone #: <span style={spanStyle}>8018341401</span> </h4>
                 </Col>
             </Row>

@@ -1,35 +1,76 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './headerComponents.css';
-import {Dropdown} from 'react-bootstrap'
+// import './headerComponents.css';
+import { Nav, Navbar, NavItem, NavDropdown } from "react-bootstrap";
+import { LinkContainer } from 'react-router-bootstrap';
 function HeaderComponent() {
+    const divstyle = { marginRight: '30px', };
     return (
         <div>
-            <div style={{ textAlign: 'center', backgroundColor:'grey' }}>
-                <h1 style={{ color: 'green' }}>MSGIS Portfolio</h1>
-                <h2>Sabita Silwal</h2>
+            <div style={{ textAlign: 'center', backgroundColor: 'grey', }}>
+                <div> <h1 >MSGIS Portfolio</h1> </div>
+                 <div> <h2>Sabita Silwal</h2> </div>
             </div>
             {/*  moves 50 px left from the relative position of the div */}
-            <div style={{textAlign:'right', backgroundColor:'lightgreen', padding:'0px'}}>
-                <Link to="/" style={{ textDecoration: 'none' }}>HOME </Link>
-                <Link to="/projects" style={{ textDecoration: 'none' }} > PROJECTS  </Link>
-               {/* <span> <Dropdown>
-                    <Dropdown.Toggle variant="success" id="dropdown-basic">
-                        Dropdown Button
-                     </Dropdown.Toggle>
+            <div style={{ textAlign: 'left', backgroundColor: 'lightgreen', padding: '15px', marginTop:'-8px' }}>
+                {/* <Link to="/" style={{ textDecoration: 'none' }}>HOME </Link>
 
-                    <Dropdown.Menu>
-                        <Dropdown.Item href="/projects">Action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-                        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-                    </Dropdown.Menu>
-                </Dropdown>
-                </span> */}
+                <Navbar>
+                    <Nav>
+                        <NavDropdown eventKey={1} title="Projects" id="basic-nav-dropdown">
+                            <MenuItem eventKey={1.1}>
+                                <button className="content-links">
+                                    <b><Link to="/projects" style={{ textDecoration: 'none' }} > Geoprocessing with Python  </Link></b>
+                                </button>
+                            </MenuItem>
+
+                        </NavDropdown>
+                    </Nav>
+                </Navbar>
                 <Link to="/resume" style={{ textDecoration: 'none' }} > RESUME</Link>
-                <Link to="/contact" style={{ textDecoration: 'none' }} > CONTACT</Link>
+                <Link to="/contact" style={{ textDecoration: 'none' }} > CONTACT</Link> */}
+                {/* <Nav pullRight>
+                    <LinkContainer to="/">
+                        <NavItem eventKey={1}>HOME</NavItem>
+                    </LinkContainer>
+                    <LinkContainer to="/resume">
+                        <NavItem eventKey={2}>RESUME</NavItem>
+                    </LinkContainer>
+                    <NavDropdown eventKey={3} title="Authorization" id="basic-nav-dropdown">
+                        <LinkContainer to="/logout">
+                            {/* <MenuItem eventKey={3.1}>Logout</MenuItem> */}
+                {/* </LinkContainer>
+                    </NavDropdown> */}
+                {/* </Nav> */}
+                <Nav variant="pills" activeKey="1" onSelect={k => this.handleSelect(k)}>
+                    <Nav.Item style={divstyle}>
+                        <LinkContainer to="/">
+                            <NavItem eventKey={1} >  HOME  </NavItem>
+                        </LinkContainer>
+                    </Nav.Item>
+                    <NavDropdown title="PROJECTS" id="nav-dropdown" style={{marginLeft: '20px', margin: '-8px' }}>
+                        <NavDropdown.Item eventKey="4.1"><Link to="/geoprocWithPython" style={{ textDecoration: 'none' }} > Geoprocessing with Python  </Link></NavDropdown.Item>
+                        <NavDropdown.Item eventKey="4.2"><Link to="/spatial-data-design-gis" style={{ textDecoration: 'none' }}>Spatial Data Design GIS</Link></NavDropdown.Item>
+                        {/* <NavDropdown.Divider />
+                        <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
+                    </NavDropdown>
+                    <Nav.Item style={{marginLeft: '30px',}}>
+                        <LinkContainer to="/resume">
+                            <NavItem eventKey={2}>RESUME</NavItem>
+                        </LinkContainer>
+
+                    </Nav.Item>
+                    <Nav.Item style={{marginLeft: '30px',}}>
+                        <LinkContainer to="/contact">
+                            <NavItem eventKey={3}>CONTACT</NavItem>
+                        </LinkContainer>
+
+                    </Nav.Item>
+                   
+                </Nav>
             </div>
         </div>
-    );
+    )
 
 }
 export default HeaderComponent;
