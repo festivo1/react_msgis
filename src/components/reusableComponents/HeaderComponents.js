@@ -42,10 +42,10 @@ function HeaderComponent() {
                 {/* </LinkContainer>
                     </NavDropdown> */}
                 {/* </Nav> */}
-                <Nav variant="pills" activeKey="1" onSelect={k => this.handleSelect(k)}>
+                <Nav variant="pills" activeKey="1">
                     <Nav.Item style={divstyle}>
                         <LinkContainer to="/">
-                            <NavItem eventKey={1} >  HOME  </NavItem>
+                            <NavItem eventKey={1} >HOME</NavItem>
                         </LinkContainer>
                     </Nav.Item>
                     <NavDropdown title="PROJECTS" id="nav-dropdown" style={{marginLeft: '20px', margin: '-8px' }}>
