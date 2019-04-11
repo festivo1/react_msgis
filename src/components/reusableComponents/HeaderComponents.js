@@ -49,13 +49,13 @@ function HeaderComponent() {
                         </LinkContainer>
                     </Nav.Item>
                     <NavDropdown title="PROJECTS" id="nav-dropdown" style={{marginLeft: '20px', margin: '-8px' }}>
-                        <NavDropdown.Item eventKey="4.1"><Link to="/advanced-geographical-data-analysis" style={{ textDecoration: 'none' }} > Advanced Geographical data Analysis  </Link></NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.2"><Link to="/geoprocessing-with-python" style={{ textDecoration: 'none' }}>Geoprocessing with Python</Link></NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.2"><Link to="/gis-public-health" style={{ textDecoration: 'none' }}>GIS Public Health</Link></NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.2"><Link to="/project-management" style={{ textDecoration: 'none' }}>Project Management</Link></NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.2"><Link to="/spatial-data-design-gis" style={{ textDecoration: 'none' }}>Spatial Data Design GIS</Link></NavDropdown.Item>
+                        <NavDropdown.Item eventKey="4.1"><Link to="/advanced-geographical-data-analysis" style={{ textDecoration: 'none' }} ><button>Advanced Geographical data Analysis </button>  </Link></NavDropdown.Item>
+                        <NavDropdown.Item eventKey="4.2"><Link to="/geoprocessing-with-python" style={{ textDecoration: 'none' }}><button>Geoprocessing with Python</button></Link></NavDropdown.Item>
+                        <NavDropdown.Item eventKey="4.2"><Link to="/gis-public-health" style={{ textDecoration: 'none' }}><button>GIS Public Health</button></Link></NavDropdown.Item>
+                        <NavDropdown.Item eventKey="4.2"><Link to="/project-management" style={{ textDecoration: 'none' }}><button>Project Management</button></Link></NavDropdown.Item>
+                        <NavDropdown.Item eventKey="4.2"><Link to="/spatial-data-design-gis" style={{ textDecoration: 'none' }}><button>Spatial Data Design GIS</button></Link></NavDropdown.Item>
                         {/* <NavDropdown.Item eventKey="4.2"><Link to="/spatial-modelling-WGIS" style={{ textDecoration: 'none' }}>Spatial Modelling WGIA</Link></NavDropdown.Item> */}
-                        <NavDropdown.Item eventKey="4.2"><Link to="/webgis" style={{ textDecoration: 'none' }}>WebGIS</Link></NavDropdown.Item>
+                        <NavDropdown.Item eventKey="4.2"><Link to="/webgis" style={{ textDecoration: 'none' }}><button>WebGIS</button></Link></NavDropdown.Item>
                         {/* <NavDropdown.Divider />
                         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
                     </NavDropdown>
