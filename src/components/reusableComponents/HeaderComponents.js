@@ -54,7 +54,7 @@ function HeaderComponent() {
                         <NavDropdown.Item eventKey="4.2"><Link to="/gis-public-health" style={{ textDecoration: 'none' }}>GIS Public Health</Link></NavDropdown.Item>
                         <NavDropdown.Item eventKey="4.2"><Link to="/project-management" style={{ textDecoration: 'none' }}>Project Management</Link></NavDropdown.Item>
                         <NavDropdown.Item eventKey="4.2"><Link to="/spatial-data-design-gis" style={{ textDecoration: 'none' }}>Spatial Data Design GIS</Link></NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.2"><Link to="/spatial-modelling-WGIS" style={{ textDecoration: 'none' }}>Spatial Modelling WGIA</Link></NavDropdown.Item>
+                        {/* <NavDropdown.Item eventKey="4.2"><Link to="/spatial-modelling-WGIS" style={{ textDecoration: 'none' }}>Spatial Modelling WGIA</Link></NavDropdown.Item> */}
                         <NavDropdown.Item eventKey="4.2"><Link to="/webgis" style={{ textDecoration: 'none' }}>WebGIS</Link></NavDropdown.Item>
                         {/* <NavDropdown.Divider />
                         <NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item> */}
