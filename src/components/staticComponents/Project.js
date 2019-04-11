@@ -49,7 +49,7 @@ export class ADDA extends React.Component {
                          of the pebbles in the creek.
                     </p>
                     <figure>
-                        <center><img src={fieldVisit} style={{ width: '40%', height: '400px' }}></img>
+                        <center><img src={fieldVisit} style={{ width: '100%', height: '100%' }}></img>
                             <figcaption>Fig1. - field Visit at Dry Creek.</figcaption>
                         </center>
                     </figure>
@@ -58,7 +58,7 @@ export class ADDA extends React.Component {
                     <h6><b>Study Area</b></h6>
                     <p>Dry Creek Canyon lies between east of Limekiln Gulch and west of Red Butte Reservoir.</p>
                     <figure>
-                        <center><img src={locationMap} style={{ width: '40%', height: '400px' }}></img>
+                        <center><img src={locationMap} style={{ width: '100%', height: '100%' }}></img>
                             <figcaption>Fig2. - Location Map of Research Project(soruce: google earth, 2015).</figcaption>
                         </center>
                     </figure>
@@ -105,10 +105,10 @@ export class ADDA extends React.Component {
                     </figure>
                     <p>Results from R-Studio</p>
                     <figure>
-                        <center><img src={pebbleResultGraph} style={{ width: '40%', height: '400px' }}></img>
+                        <center><img src={pebbleResultGraph} style={{ width: '100%', height: '100%' }}></img>
                             {/* <figcaption>Fig2. - Location Map of Research Project(soruce: google earth, 2015).</figcaption> */}
                         </center>
-                        <center><img src={linearityGraph} style={{ width: '40%', height: '400px' }}></img>
+                        <center><img src={linearityGraph} style={{ width: '100%', height: '100%' }}></img>
                             {/* <figcaption>Fig2. - Location Map of Research Project(soruce: google earth, 2015).</figcaption> */}
                         </center>
                     </figure>
