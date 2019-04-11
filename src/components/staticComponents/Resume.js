@@ -23,7 +23,7 @@ class Resume extends React.Component {
                 <a href="tel:8018341401">8018341401</a>
               </div>
             </div> {/* end links */}
-            <p>An experienced GIS data analyst ...</p>
+            {/* <p>An experienced GIS data analyst ...</p> */}
           </div>
         </section>
         <section>
