@@ -4,6 +4,7 @@ import geoResult from '../../assets/images/geoResult.jpg'
 import fieldVisit from '../../assets/images/advanced_geo_data_analysis/fieldVisit.jpg'
 import locationMap from '../../assets/images/advanced_geo_data_analysis/locationMap.jpg'
 import { ReactComponent as PebbleData } from '../../assets/images/advanced_geo_data_analysis/pebble_data.svg'
+import pebbledata from '../../assets/images/advanced_geo_data_analysis/pebble_data.jpg'
 import pebbleResultGraph from '../../assets/images/advanced_geo_data_analysis/pebbleResult.jpg'
 import linearityGraph from '../../assets/images/advanced_geo_data_analysis/linearityGraph.jpg'
 import county_vs_asthma from '../../assets/images/gis_public_health/county_vs_asthma.jpg'
@@ -97,10 +98,10 @@ export class ADDA extends React.Component {
                     <h6><b>Result</b></h6>
                     <p>Location and Pebble data collected from Dry Creek</p>
                     <figure>
-                        <PebbleData />
-                        {/* <center><img src={locationMap} style={{ width: '40%', height: '400px' }}></img>
-                            <figcaption>Fig2. - Location Map of Research Project(soruce: google earth, 2015).</figcaption>
-                        </center> */}
+                        {/* <PebbleData /> */}
+                        <center><img src={pebbledata} style={{ width: '100%', height: '100%' }}></img>
+                            <figcaption>Fig3. -result </figcaption>
+                        </center>
                     </figure>
                     <p>Results from R-Studio</p>
                     <figure>
