@@ -1,4 +1,7 @@
 import React from "react";
+import locationMapofParcelData from '../../assets/images/capstone/location_map.jpg';
+import flowchart from '../../assets/images/capstone/flowchart.png';
+import outputSingleMap from '../../assets/images/capstone/UDOT_Data_Driven_Pages99.png';
 import { ReactComponent as GeoPic } from '../../assets/images/geoPic.svg';
 import geoResult from '../../assets/images/geoResult.jpg'
 import fieldVisit from '../../assets/images/advanced_geo_data_analysis/fieldVisit.jpg'
@@ -28,6 +31,130 @@ import result from '../../assets/images/webgis/result.jpg'
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import './projects.css';
 import { Nav, Navbar, NavItem, NavDropdown } from "react-bootstrap";
+export class Capstone extends React.Component {
+    render() {
+        return (
+            <Container>
+                <div>
+                    <h4 style={{ textAlign: 'center' }}><b>Capstone</b></h4>
+                </div>
+                <div style={{ textAlign: 'center' }}>
+                    <h5><b>Utah Department of Transportation Right of Way Data Driven Pages</b></h5>
+
+                </div>
+                <div>
+                    <h6><b>Introduction</b></h6>
+                    <p>
+                        Utah Department of Transportation(UDOT) wants to create right of way
+                        data driven pages using parcel data and automate the process using the
+                        python scripting. ArcGIS is a software which can create the data driven
+                        pages from the parcel data and the pages are modified to
+                        create series of maps using python scripting. The main objective of this
+                        project is to create python script that can autogenerate map series
+                        for the client (UDOT) and save valuable time of their staff in future
+                        when generating similar maps for other projects.
+                    </p>
+                    {/* <figure>
+                        <center><img src={fieldVisit} style={{ width: '100%', height: '100%' }}></img>
+                            <figcaption>Fig1. - field Visit at Dry Creek.</figcaption>
+                        </center>
+                    </figure> */}
+                </div>
+                <div>
+                    <h6><b>Study Area</b></h6>
+                    <p>UDOT provided parcel data of Sandy City between State Street and 700 East along 9000 South (Fig.1)</p>
+                    <figure>
+                        <center><img src={locationMapofParcelData} style={{ width: '80%', height: '100%' }}></img>
+                            <figcaption>Fig1. - Location Map of sampel parcel data</figcaption>
+                        </center>
+                    </figure>
+                </div>
+                <div>
+                    <h6><b>Methodology</b></h6>
+                    There are three major steps to complete the project enlisted as follows
+                    <ul>
+                        <li>•	Step 1: Setup Map Layouts</li>
+                        <li>•	Step 2: Develop a Python Script</li>
+                        <li>•	Step 3: Create a Custom Toolbox </li>
+                    </ul>
+                    <div style={{ marginLeft: '20px' }}>
+                        <h6> <b>Step 2.1: Setup Map Layouts</b></h6>
+                        <p>Four data driven page enabled map documents of sizes
+                         8.5ʺ×11ʺ (portrait and landscape) and 11ʺ×17ʺ
+                         (portrait and landscape) were created
+                         in ArcGIS Desktop. The following attributes
+                        were added in the map document as per the request
+                       of client.</p>
+                        <div>
+                            <ul><li>•	UDOT logo, legend, north arrow and scale</li>
+                                <li>•	Dynamic text of county, project name, parcel acreage and parcel size</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div style={{ marginLeft: '20px' }}>
+                        <h6><b> Step 2.2: Develop a Python Script</b></h6>
+                        <p>To automate the task, Python scripting is used to create a map
+                            series based on the input parcels feature class. The map series
+                             outputs a PDF map book with map elements
+                             per parcel dynamically choosing a map document among the four.
+                             The following flowchart (Fig2)shows the total program flow for the
+                             automation.</p>
+                        <figure>
+                            <center><img src={flowchart} style={{ width: '70%', height: '600px' }}></img>
+                                <figcaption>Fig2. - flowchart</figcaption>
+                            </center>
+                        </figure>
+
+                    </div>
+                    <div style={{ marginLeft: '20px' }}>
+                        <h6> <b>Step 2.3: create a custom toolbox</b></h6>
+                        <p>A new toolbox was created in ArcGIS Desktop to
+                             run the Python script. Python script that was created
+                             for this project was added to the newly created toolbox.</p>
+                        {/* <figure>
+                            <center><img src={flowchart} style={{ width: '70%', height: '600px' }}></img>
+                                <figcaption>Fig2. - flowchart</figcaption>
+                            </center>
+                        </figure> */}
+
+                    </div>
+
+
+                    {/* <figure>
+                        <center><img src={locationMap} style={{ width: '40%', height: '400px' }}></img>
+                            <figcaption>Fig2. - Location Map of Research Project(soruce: google earth, 2015).</figcaption>
+                        </center>
+                    </figure> */}
+                </div>
+                <div>
+                    <h6><b>Results and Discussions</b></h6>
+                    <p>
+                        The project resulted in three deliverables.
+                    <ul>
+                            <li>I.	Four map layouts.</li>
+                            <li>II.	Python script that create map series based on the input
+                                 feature class of parcel. The map series outputs a PDF map
+                                  page (dynamically choose 8.5ʺ×11ʺ or 11ʺ×17ʺ in either
+                                   portrait or landscape) with map elements per parcel</li>
+                            <li>III.	A custom toolbox that runs the python script</li>
+</ul>
+                        While working on the map layout, dynamic text was challenging because of inexperience of using that tool. For this project, most of the dynamic elements were retrieved using Data Driven Page Attribute. Also, most of the map elements and symbology were created in Data Driven Pages of ArcGIS Desktop. For future project, I think most of this part can also be done using Python Script.
+                        
+                    </p>
+                    <figure>
+                        <center><img src={outputSingleMap} style={{ width: '80%', height: '100%' }}></img>
+                            <figcaption>Fig4. - Example of map generated using  Python Script.</figcaption>
+                        </center>
+                        
+                    </figure>
+                </div>
+
+
+               
+            </Container>
+        );
+    }
+}
 export class ADDA extends React.Component {
     render() {
         return (
@@ -536,22 +663,22 @@ export class WebGIS extends React.Component {
                     <div> 3.	Pop up and search which allows user to search addresses and
                             display total population and groundwater withdrawal for the respective
                         county</div>
-                    <div style={{marginTop:"15px"}}>Data used for the project are as follows:
+                    <div style={{ marginTop: "15px" }}>Data used for the project are as follows:
                     <ul>
 
                             <li>•	Water Use Data for Nevada</li>
                             <li>•	Nevada Census data, US Census Bureau, 2010</li>
                             <li>•	Shapfiles of counties of Nevada</li>
-                        
+
                         </ul>
                     </div>
                     <div><b>Application</b>
-                         <figure>
-                        <center><img src={result} style={{ width: '100%', height: '100%' }}></img>
-                            <figcaption>Fig1. -ScreenShot of Application</figcaption>
-                        </center>
-                    </figure>
-                    <a href="http://content.csbs.utah.edu/~u0711476/Project/SilwalFinalProject"target="_blank">http://content.csbs.utah.edu/~u0711476/Project/SilwalFinalProject</a>
+                        <figure>
+                            <center><img src={result} style={{ width: '100%', height: '100%' }}></img>
+                                <figcaption>Fig1. -ScreenShot of Application</figcaption>
+                            </center>
+                        </figure>
+                        <a href="http://content.csbs.utah.edu/~u0711476/Project/SilwalFinalProject" target="_blank">http://content.csbs.utah.edu/~u0711476/Project/SilwalFinalProject</a>
                     </div>
 
 
