@@ -15,7 +15,7 @@ class Home extends React.Component {
                     <Col style={{ color: 'black', lineHeight: '25px' }}>
                         <p>
                             My name is Sabita Silwal, an MSGIS student at the Department of
-                             Geography in the University of Utah, who will be graduating in
+                             Geography in the University of Utah, graduating in
                              May 2019. I have been working as a Research/Data Analyst at the
                              Energy and Geoscience Institute since 2013. I work with the
                               Biostratigraphy group and help in their projects where I

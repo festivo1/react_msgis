@@ -8,7 +8,7 @@ function HeaderComponent() {
     return (
         <div>
             <div style={{ textAlign: 'center', backgroundColor: 'grey', }}>
-                <div> <h1 >MSGIS Portfolio</h1> </div>
+                <div> <h1 >Portfolio</h1> </div>
                 <div> <h2>Sabita Silwal</h2> </div>
             </div>
             {/*  moves 50 px left from the relative position of the div */}
