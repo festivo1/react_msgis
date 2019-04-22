@@ -52,7 +52,7 @@ function HeaderComponent() {
                         <NavDropdown.Item eventKey="4.1"><Link to="/capstone" style={{ textDecoration: 'none' }} ><button>Capstone </button>  </Link></NavDropdown.Item>
                         <NavDropdown.Item eventKey="4.2"><Link to="/advanced-geographical-data-analysis" style={{ textDecoration: 'none' }} ><button>Advanced Geographical data Analysis </button>  </Link></NavDropdown.Item>
                         <NavDropdown.Item eventKey="4.3"><Link to="/geoprocessing-with-python" style={{ textDecoration: 'none' }}><button>Geoprocessing with Python</button></Link></NavDropdown.Item>
-                        <NavDropdown.Item eventKey="4.4"><Link to="/gis-public-health" style={{ textDecoration: 'none' }}><button>GIS Public Health</button></Link></NavDropdown.Item>
+                        {/* <NavDropdown.Item eventKey="4.4"><Link to="/gis-public-health" style={{ textDecoration: 'none' }}><button>GIS Public Health</button></Link></NavDropdown.Item> */}
                         <NavDropdown.Item eventKey="4.5"><Link to="/project-management" style={{ textDecoration: 'none' }}><button>Project Management</button></Link></NavDropdown.Item>
                         <NavDropdown.Item eventKey="4.6"><Link to="/spatial-data-design-gis" style={{ textDecoration: 'none' }}><button>Spatial Data Design GIS</button></Link></NavDropdown.Item>
                         {/* <NavDropdown.Item eventKey="4.2"><Link to="/spatial-modelling-WGIS" style={{ textDecoration: 'none' }}>Spatial Modelling WGIA</Link></NavDropdown.Item> */}
